@@ -2,7 +2,7 @@ import React from 'react';
 
 const Types = () => (
   <div>
-    <h1>Types page</h1>
+    <h1>Compte Amazon</h1>
   </div>
 );
 

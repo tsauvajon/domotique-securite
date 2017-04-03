@@ -13,7 +13,7 @@ class Admin extends Component {
   render() {
     return (
       <div>
-        <h2>Admin page</h2>
+        <h2>Paramétrage</h2>
         <BottomNav />
       </div>
     );

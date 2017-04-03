@@ -2,7 +2,7 @@ import React from 'react';
 
 const Documents = () => (
   <div>
-    <h1>Documents page</h1>
+    <h1>Liste des boutons Push</h1>
   </div>
 );
 

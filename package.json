@@ -41,12 +41,13 @@
     "start:server": "node ./server/index",
     "test": "react-scripts test --env=jsdom",
     "test:full": "yarn lint && yarn coverage",
+    "test:once": "set CI=true && react-scripts test --env=jsdom",
     "test:coverage": "set CI=true && react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*.js? --collectCoverageFrom=!src/index.js"
   },
   "pre-commit": {
     "run": [
       "lint",
-      "coverage"
+      "test:once"
     ]
   },
   "jest": {

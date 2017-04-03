@@ -40,7 +40,7 @@ class Navigation extends Component {
     return (
       <div>
         <AppBar
-          title="Prism"
+          title="Push"
           onLeftIconButtonTouchTap={() => this.handleTouchTap()}
           iconElementRight={
             <Link to="/">
@@ -63,17 +63,17 @@ class Navigation extends Component {
           />
           <PrismMenuItem
             to="/"
-            label="Documents"
+            label="Boutons"
             onTouchTap={() => this.handleTouchTap()}
           />
           <PrismMenuItem
             to="/admin/config"
-            label="Administration"
+            label="Paramétrage"
             onTouchTap={() => this.handleTouchTap()}
           />
           <PrismMenuItem
             to="/types"
-            label="Types"
+            label="Amazon"
             onTouchTap={() => this.handleTouchTap()}
           />
         </Drawer>
