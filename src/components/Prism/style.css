@@ -1,0 +1,20 @@
+/*
+gris #dddfd4
+jaune #fae596
+bleu vert #3fb0ac
+#173e43
+*/
+
+
+h2 {
+  text-align: center;
+}
+
+.prism-header {
+  height: 150px;
+  font-size: large;
+}
+
+.prism-intro {
+  font-size: large;
+}

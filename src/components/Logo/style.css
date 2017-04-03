@@ -1,0 +1,164 @@
+.prism-logo {
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+    position: relative;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-circle-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #dddfd4;
+    background-color: rgba(221, 223, 212, 0.9);
+    border-radius: 50%;
+    filter: blur(15px);
+}
+
+.logo-container {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 80%;
+    width: 80%;
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.2)));
+}
+
+/*.logo-container:before {
+    top: 52px;
+    left: 5px;
+    transform: rotate(-5deg);
+    box-shadow: 7px 6px 15px #333;
+}
+
+.logo-container:after {
+    top: 52px;
+    right: 5px;
+    transform: rotate(5deg);
+    box-shadow: -7px 6px 15px #333;
+}*/
+
+.logo-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #22264b;
+    /*background-color: #173e43;*/
+    -webkit-clip-path: polygon(50% 67%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 67%, 0% 100%, 100% 100%);
+    animation: come-from-bottom 2s;
+}
+
+.logo-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e6cf8b;
+    /*background-color: #fae596;*/
+    -webkit-clip-path: polygon(50% 67%, 0% 100%, 50% 0%);
+    clip-path: polygon(50% 67%, 0% 100%, 50% 0%);
+    animation: come-from-left 2s;
+}
+
+.logo-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #b56969;
+    /*background-color: #3fb0ac;*/
+    -webkit-clip-path: polygon(50% 67%, 100% 100%, 50% 0%);
+    clip-path: polygon(50% 67%, 100% 100%, 50% 0%);
+    animation: come-from-right 2s;
+}
+
+.logo-center {
+    top: 42%;
+    left: 25%;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: #607D8B;
+    /*background-color: rgba(221, 223, 212, 0.9);*/
+    border-radius: 50%;
+    filter: blur(10px);
+}
+
+@-webkit-keyframes come-from-right {
+    0% {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes come-from-right {
+    0% {
+        -webkit-transform: translateX(30px);
+        transform: translateX(30px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes come-from-left {
+    0% {
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@keyframes come-from-left {
+    0% {
+        -webkit-transform: translateX(-30px);
+        transform: translateX(-30px);
+    }
+    100% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+}
+
+@-webkit-keyframes come-from-bottom {
+    0% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+@keyframes come-from-bottom {
+    0% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
