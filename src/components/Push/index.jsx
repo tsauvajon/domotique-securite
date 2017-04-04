@@ -8,7 +8,7 @@ import muiTheme from '../../style/muiTheme';
 import '../tap';
 import './style.css';
 
-class Prism extends Component {
+class Push extends Component {
   // Récupère le context.theme
   getChildContext() {
     return { muiTheme: getMuiTheme() };
@@ -31,8 +31,8 @@ class Prism extends Component {
 // Validation react :
 
 // Child contexts
-Prism.childContextTypes = {
+Push.childContextTypes = {
   muiTheme: PropTypes.object.isRequired,
 };
 
-export default Prism;
+export default Push;

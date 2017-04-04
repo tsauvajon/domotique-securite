@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 // import renderer from 'react-test-renderer';
-import Admin from '../components/Admin';
+import Admin from './';
 // import recursivePropsTesting from '../recursivePropsTesting';
-import '../components/tap';
+import '../tap';
 
 const div = document.createElement('div');
 
