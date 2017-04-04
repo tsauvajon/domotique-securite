@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AutoComplete from 'material-ui/AutoComplete';
 import jsonp from 'jsonp-promise';
+import './style.css';
 
 const googleAutoSuggestURL = '//suggestqueries.google.com/complete/search?output=firefox&hl=fr&q=';
 
@@ -13,23 +14,37 @@ class ProductSearch extends Component {
   }
 
   async handleUpdateInput(input) {
+    if (input === '') {
+      return;
+    }
+
     const url = googleAutoSuggestURL.concat(input);
 
-    const data = await jsonp(url, { param: 'jsonp' }).promise;
-    const dataSource = data[1];
+    try {
+      const data = await jsonp(url, { param: 'jsonp' }).promise;
+      const dataSource = data[1];
+      this.setState({
+        dataSource,
+      });
+    } catch (err) {
+      // TODO: gérer l'erreur
+      console.log(err); // eslint-disable-line
 
-    this.setState({
-      dataSource,
-    });
+      this.setState({
+        dataSource: [input],
+      });
+    }
   }
 
   render() {
     return (
-      <AutoComplete
-        id={'productSearchAutoComplete'}
-        dataSource={this.state.dataSource}
-        onUpdateInput={input => this.handleUpdateInput(input)}
-      />
+      <div className={'push-autocomplete-search'}>
+        <AutoComplete
+          id={'productSearchAutoComplete'}
+          dataSource={this.state.dataSource}
+          onUpdateInput={input => this.handleUpdateInput(input)}
+        />
+      </div>
     );
   }
 }
