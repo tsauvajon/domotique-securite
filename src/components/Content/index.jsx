@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Admin from '../Admin';
 import Types from '../Types';
-import Documents from '../Documents';
+import PushButtons from '../PushButtons';
 import NotFound from '../NotFound';
 
 const Content = () => (
@@ -10,7 +10,7 @@ const Content = () => (
     <Switch>
       <Route path="/admin" component={Admin} />
       <Route path="/types" component={Types} />
-      <Route exact path="/" component={Documents} />
+      <Route exact path="/" component={PushButtons} />
       <Route component={NotFound} />
     </Switch>
   </div>

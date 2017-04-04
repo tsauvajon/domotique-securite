@@ -18,7 +18,7 @@
     height: 100%;
     position: absolute;
     background-color: #dddfd4;
-    background-color: rgba(221, 223, 212, 0.9);
+    background-color: rgba(221, 223, 212, 0.8);
     border-radius: 50%;
     filter: blur(15px);
 }

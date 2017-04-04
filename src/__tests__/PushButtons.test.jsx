@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Documents from '../components/Documents';
+import Documents from '../components/PushButtons';
 
 it('renders Types without crashing', () => {
   const div = document.createElement('div');
