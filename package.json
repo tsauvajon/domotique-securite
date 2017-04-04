@@ -12,6 +12,7 @@
     "react-addons-test-utils": "^15.4.2"
   },
   "dependencies": {
+    "amazon-product-api": "^0.4.3",
     "classnames": "^2.2.5",
     "deep-freeze": "^0.0.1",
     "eslint": "^3.15.0",
