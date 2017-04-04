@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Prism from './';
+import Push from './';
 
 it('renders Prism without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Prism />, div);
+  ReactDOM.render(<Push />, div);
 });
