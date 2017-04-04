@@ -27,7 +27,7 @@ PrismMenuItem.propTypes = {
   to: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onTouchTap: PropTypes.func.isRequired,
-  icon: PropTypes.objectOf(PropTypes.object).isRequired,
+  icon: PropTypes.node.isRequired,
 };
 
 export default PrismMenuItem;

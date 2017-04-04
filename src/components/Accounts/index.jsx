@@ -2,7 +2,7 @@ import React from 'react';
 
 const Accounts = () => (
   <div>
-    <h1>Types page</h1>
+    <h2>Comptes</h2>
   </div>
 );
 

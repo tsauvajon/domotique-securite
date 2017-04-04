@@ -8,8 +8,8 @@ import './style.css';
 
 
 const paramIcon = <FontIcon className="material-icons md-48">build</FontIcon>;
-const usersIcon = <FontIcon className="material-icons md-48">face</FontIcon>;
-const cleanseIcon = <FontIcon className="material-icons md-48">delete_sweep</FontIcon>;
+const planningIcon = <FontIcon className="material-icons md-48">event</FontIcon>;
+const ordersIcon = <FontIcon className="material-icons md-48">local_shipping</FontIcon>;
 
 class BottomNav extends Component {
   constructor() {
@@ -36,24 +36,24 @@ class BottomNav extends Component {
     return (
       <Paper zDepth={1} className="prism-bottom-nav" style={{ bottom: '1px', position: 'absolute', width: '100%' }}>
         <BottomNavigation selectedIndex={this.state.selectedIndex}>
-          <Link to="/admin/config" onTouchTap={() => this.select(0)}>
+          <Link to="/admin/settings" onTouchTap={() => this.select(0)}>
             <BottomNavigationItem
-              label="Paramétrage"
+              label="Paramètres"
               icon={paramIcon}
               selected={this.state.selectedIndex === 0}
             />
           </Link>
-          <Link to="/admin/users" onTouchTap={() => this.select(1)}>
+          <Link to="/admin/planning" onTouchTap={() => this.select(1)}>
             <BottomNavigationItem
-              label="Utilisateurs"
-              icon={usersIcon}
+              label="Horaires"
+              icon={planningIcon}
               selected={this.state.selectedIndex === 1}
             />
           </Link>
-          <Link to="/admin/cleanse" onTouchTap={() => this.select(2)}>
+          <Link to="/admin/orders" onTouchTap={() => this.select(2)}>
             <BottomNavigationItem
-              label="Purge"
-              icon={cleanseIcon}
+              label="Commandes"
+              icon={ordersIcon}
               selected={this.state.selectedIndex === 2}
             />
           </Link>
