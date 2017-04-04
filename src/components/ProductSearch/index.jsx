@@ -2,37 +2,25 @@ import React, { Component } from 'react';
 import AutoComplete from 'material-ui/AutoComplete';
 import jsonp from 'jsonp-promise';
 
-const googleAutoSuggestURL = '//suggestqueries.google.com/complete/search?&hl=fr&q=';
+const googleAutoSuggestURL = '//suggestqueries.google.com/complete/search?output=firefox&hl=fr&q=';
 
 class ProductSearch extends Component {
   constructor(props) {
     super(props);
     this.state = {
       dataSource: [],
-      input: '',
     };
   }
 
-  handleUpdateInput(input) {
-    console.log('handling: ', input);
-    const dataSource = [];
+  async handleUpdateInput(input) {
+    const url = googleAutoSuggestURL.concat(input);
+
+    const data = await jsonp(url, { param: 'jsonp' }).promise;
+    const dataSource = data[1];
+
     this.setState({
       dataSource,
-      input,
     });
-    this.search();
-  }
-
-  search() {
-    console.log('searching');
-    if (this.state.input && this.state.input !== '') {
-      const url = googleAutoSuggestURL.concat(this.state.input);
-      jsonp(url)
-        .then(dataSource => this.setState({
-          dataSource,
-        }))
-        .catch(error => console.log(error));
-    }
   }
 
   render() {
