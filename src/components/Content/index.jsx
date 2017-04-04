@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Admin from '../Admin';
-import Types from '../Types';
+import Accounts from './';
 import PushButtons from '../PushButtons';
 import NotFound from '../NotFound';
 
@@ -9,7 +9,7 @@ const Content = () => (
   <div className="prism-content">
     <Switch>
       <Route path="/admin" component={Admin} />
-      <Route path="/types" component={Types} />
+      <Route path="/types" component={Accounts} />
       <Route exact path="/" component={PushButtons} />
       <Route component={NotFound} />
     </Switch>

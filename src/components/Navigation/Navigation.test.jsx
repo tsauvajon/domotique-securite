@@ -4,11 +4,11 @@ import { browserHistory, BrowserRouter as Router } from 'react-router-dom';
 // import ReactTestUtils from 'react-addons-test-utils';
 // import renderer from 'react-test-renderer';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Navigation from '../components/Navigation';
+import Navigation from './';
 // import ContextWrapper from '../components/ContextWrapper';
 // import recursivePropsTesting from '../recursivePropsTesting';
-import muiTheme from '../style/muiTheme';
-import '../components/tap';
+import muiTheme from '../../style/muiTheme';
+import '../tap';
 
 
 it('renders Navigation without crashing', () => {
