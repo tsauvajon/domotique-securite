@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import BottomNav from '../BottomNav';
+import Header from '../Header';
 
 class Admin extends Component {
   // Récupère le context
@@ -13,7 +14,7 @@ class Admin extends Component {
   render() {
     return (
       <div>
-        <h2>Paramétrage</h2>
+        <Header title={'Paramétrage'} />
         <BottomNav />
       </div>
     );

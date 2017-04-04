@@ -1,0 +1,10 @@
+.push-push-btn {
+  margin-top: 5px;
+  padding: 10px;
+  text-align: center;
+  max-width: 450px;
+}
+
+.push-btn-label {
+  font-size: large;
+}
