@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../Header';
 import Login from '../Login';
 
 const Accounts = () => (
   <div>
-    <h2>Comptes</h2>
+    <Header title={'Comptes'} />
     <Login />
   </div>
 );

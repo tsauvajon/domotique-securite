@@ -34,7 +34,7 @@ class BottomNav extends Component {
 
   render() {
     return (
-      <Paper zDepth={1} className="prism-bottom-nav" style={{ bottom: '1px', position: 'absolute', width: '100%' }}>
+      <Paper zDepth={4} className="prism-bottom-nav" style={{ bottom: '1px', position: 'absolute', width: '100%' }}>
         <BottomNavigation selectedIndex={this.state.selectedIndex}>
           <Link to="/admin/settings" onTouchTap={() => this.select(0)}>
             <BottomNavigationItem
