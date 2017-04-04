@@ -12,7 +12,7 @@ import PrismMenuItem from '../PrismMenuItem';
 
 const buttonsIcon = <FontIcon className="material-icons md-48">settings_remote</FontIcon>;
 const paramIcon = <FontIcon className="material-icons md-48">settings</FontIcon>;
-const amazonIcon = <FontIcon className="material-icons md-48">credit_card</FontIcon>;
+const accountsIcon = <FontIcon className="material-icons md-48">account_box</FontIcon>;
 
 class Navigation extends Component {
   constructor(props) {
@@ -73,16 +73,16 @@ class Navigation extends Component {
             icon={buttonsIcon}
           />
           <PrismMenuItem
-            to="/admin/config"
+            to="/admin/settings"
             label="Paramétrage"
             onTouchTap={() => this.handleTouchTap()}
             icon={paramIcon}
           />
           <PrismMenuItem
-            to="/types"
-            label="Amazon"
+            to="/accounts"
+            label="Comptes"
             onTouchTap={() => this.handleTouchTap()}
-            icon={amazonIcon}
+            icon={accountsIcon}
           />
         </Drawer>
       </div>
