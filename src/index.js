@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Prism from './components/Prism';
+import Push from './components/Push';
 import './style.css';
 
 
 /* eslint-disable react/jsx-filename-extension */
 
 ReactDOM.render(
-  <Prism />,
+  <Push />,
   document.getElementById('root'),
 );
 
