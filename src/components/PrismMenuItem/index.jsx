@@ -13,6 +13,8 @@ class PrismMenuItem extends Component {
       <div className="prism-menu-item">
         <Link to={this.props.to}>
           <MenuItem onTouchTap={() => this.handleTouchTap()} >
+            {this.props.icon}
+            &nbsp;
             {this.props.label}
           </MenuItem>
         </Link>
@@ -25,6 +27,7 @@ PrismMenuItem.propTypes = {
   to: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   onTouchTap: PropTypes.func.isRequired,
+  icon: PropTypes.objectOf(PropTypes.object).isRequired,
 };
 
 export default PrismMenuItem;

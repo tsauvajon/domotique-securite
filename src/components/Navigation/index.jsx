@@ -2,12 +2,17 @@ import React, { Component, PropTypes } from 'react';
 import AppBar from 'material-ui/AppBar';
 import Drawer from 'material-ui/Drawer';
 // import MenuItem from 'material-ui/MenuItem';
+import FontIcon from 'material-ui/FontIcon';
 import IconButton from 'material-ui/IconButton';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo';
 import PrismMenuItem from '../PrismMenuItem';
 
 // const accountIcon = <FontIcon className="material-icons md-48">account_circle</FontIcon>;
+
+const buttonsIcon = <FontIcon className="material-icons md-48">settings_remote</FontIcon>;
+const paramIcon = <FontIcon className="material-icons md-48">settings</FontIcon>;
+const amazonIcon = <FontIcon className="material-icons md-48">credit_card</FontIcon>;
 
 class Navigation extends Component {
   constructor(props) {
@@ -65,16 +70,19 @@ class Navigation extends Component {
             to="/"
             label="Boutons"
             onTouchTap={() => this.handleTouchTap()}
+            icon={buttonsIcon}
           />
           <PrismMenuItem
             to="/admin/config"
             label="Paramétrage"
             onTouchTap={() => this.handleTouchTap()}
+            icon={paramIcon}
           />
           <PrismMenuItem
             to="/types"
             label="Amazon"
             onTouchTap={() => this.handleTouchTap()}
+            icon={amazonIcon}
           />
         </Drawer>
       </div>
