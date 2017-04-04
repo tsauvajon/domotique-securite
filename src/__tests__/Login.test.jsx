@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Types from '../components/Types';
+import Login from '../components/Login';
 
 it('renders Types without crashing', () => {
   const div = document.createElement('div');
-  ReactDOM.render(<Types />, div);
+  ReactDOM.render(<Login />, div);
 });
