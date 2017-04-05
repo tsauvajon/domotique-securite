@@ -5,7 +5,7 @@ import './style.css';
 
 const Header = props => (
   <ContextWrapper>
-    <Paper zDepth={4} className={'push-header'}>
+    <Paper zDepth={2} className={'push-header'}>
       <h2>
         {props.title}
       </h2>

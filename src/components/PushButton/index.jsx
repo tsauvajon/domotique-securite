@@ -37,9 +37,10 @@ const PushButton = props => (
               />
             ))
           }
+          <Divider />
+          <Subheader>Ajouter</Subheader>
+          <ProductSearch />
         </List>
-        <Divider />
-        <ProductSearch />
       </CardText>
     </Card>
   </div>
