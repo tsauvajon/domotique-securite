@@ -1,4 +1,6 @@
 import React from 'react';
+import Paper from 'material-ui/Paper';
+import { List, ListItem } from 'material-ui/List';
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
 
@@ -15,23 +17,26 @@ const responseGoogle = (response) => {
 
 const Login = () => (
   <center>
-    <div>
-      <FacebookLogin
-        appId={facebookAppId}
-        autoLoad={false}
-        fields="name,email,picture"
-        callback={responseFacebook}
-      />
-      <br />
-      <br />
-      <GoogleLogin
-        clientId={googleAppId}
-        buttonText="Login with Google"
-        onSuccess={responseGoogle}
-        onFailure={responseGoogle}
-      />
-      <br /><br />
-    </div>
+    <Paper zDepth={1}>
+      <List>
+        <ListItem>
+          <FacebookLogin
+            appId={facebookAppId}
+            autoLoad={false}
+            fields="name,email,picture"
+            callback={responseFacebook}
+          />
+        </ListItem>
+        <ListItem>
+          <GoogleLogin
+            clientId={googleAppId}
+            buttonText="Login with Google"
+            onSuccess={responseGoogle}
+            onFailure={responseGoogle}
+          />
+        </ListItem>
+      </List>
+    </Paper>
   </center>
 );
 
