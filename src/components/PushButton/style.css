@@ -1,7 +1,9 @@
 .push-push-btn {
   margin-top: 5px;
   padding: 10px;
-  /*text-align: center;*/
+  /* text-align: center; */
+  margin-right: auto;
+  margin-left: auto;
   max-width: 450px;
 }
 

@@ -5,3 +5,9 @@
 .push-order-pending {
   background-color: #ffeb3b;
 }
+
+td {
+  width: 33%;
+  text-align: center;
+  /*margin-right: 5px;*/
+}

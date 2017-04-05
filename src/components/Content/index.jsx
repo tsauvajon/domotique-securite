@@ -8,9 +8,9 @@ import NotFound from '../NotFound';
 const Content = () => (
   <div className="prism-content">
     <Switch>
-      <Route path="/admin" component={Admin} />
-      <Route path="/accounts" component={Accounts} />
-      <Route exact path="/" component={PushButtons} />
+      <Route path="/domotique-securite/admin" component={Admin} />
+      <Route path="/domotique-securite/accounts" component={Accounts} />
+      <Route path="/" component={PushButtons} />
       <Route component={NotFound} />
     </Switch>
   </div>

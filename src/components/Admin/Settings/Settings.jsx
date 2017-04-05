@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { List, ListItem } from 'material-ui/List';
 import Slider from 'material-ui/Slider';
-import Paper from 'material-ui/Paper';
 import Subheader from 'material-ui/Subheader';
+import ZoomInPaper from '../../ZoomInPaper';
 
 class Settings extends Component {
   constructor(props) {
@@ -27,7 +27,7 @@ class Settings extends Component {
 
   render() {
     return (
-      <Paper zDepth={1}>
+      <ZoomInPaper>
         <List>
           <Subheader>Me livrer à partir de</Subheader>
           <ListItem>
@@ -53,7 +53,7 @@ class Settings extends Component {
             />
           </ListItem>
         </List>
-      </Paper>
+      </ZoomInPaper>
     );
   }
 }

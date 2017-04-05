@@ -1,8 +1,8 @@
 import React from 'react';
-import Paper from 'material-ui/Paper';
 import { List, ListItem } from 'material-ui/List';
 import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
+import ZoomInPaper from '../ZoomInPaper';
 
 const facebookAppId = '1403541726333166';
 const googleAppId = '68169708474-k2juo0k8in7b35ehsfjug90o5ru96kf2.apps.googleusercontent.com';
@@ -17,7 +17,7 @@ const responseGoogle = (response) => {
 
 const Login = () => (
   <center>
-    <Paper zDepth={1}>
+    <ZoomInPaper>
       <List>
         <ListItem>
           <FacebookLogin
@@ -36,7 +36,7 @@ const Login = () => (
           />
         </ListItem>
       </List>
-    </Paper>
+    </ZoomInPaper>
   </center>
 );
 

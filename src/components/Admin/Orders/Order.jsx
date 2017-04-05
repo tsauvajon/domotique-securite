@@ -3,6 +3,7 @@ import { Card, CardHeader, CardText } from 'material-ui/Card';
 import Avatar from 'material-ui/Avatar';
 import { List, ListItem } from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
+import dateFormat from 'dateformat';
 
 const getClass = (state) => {
   switch (state) {
@@ -11,24 +12,29 @@ const getClass = (state) => {
         container: '#b2dfdb',
         text: '#e0f2f1',
       };
+    case 'sent':
+      return {
+        container: '#c5cae9',
+        text: '#e8eaf6',
+      };
     default:
     case 'pending':
       return {
-        container: '#bbdefb',
-        text: '#e3f2fd',
+        container: '#e1bee7',
+        text: '#f3e5f5',
       };
   }
 };
 
 const Order = props => (
-  <div className={'push-push-btn'}>
+  <div className="push-paper">
     <Card
       containerStyle={{
         backgroundColor: getClass(props.state).container,
       }}
     >
       <CardHeader
-        title={props.date}
+        title={`Le ${dateFormat(props.date, 'dd/mm/yyyy à hh:MM')}`}
         actAsExpander
         showExpandableButton
         onTouchTap={() => {}}
