@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import AutoComplete from 'material-ui/AutoComplete';
+import ContentAdd from 'material-ui/svg-icons/content/add';
+// import FloatingActionButton from 'material-ui/FloatingActionButton';
 import jsonp from 'jsonp-promise';
+// import muiTheme from '../../style/muiTheme';
 import './style.css';
 
 const googleAutoSuggestURL = '//suggestqueries.google.com/complete/search?output=firefox&hl=fr&q=';
@@ -36,6 +39,20 @@ class ProductSearch extends Component {
     }
   }
 
+  // <FloatingActionButton
+  //   mini
+  //
+  //   style={{
+  //     margin: 10,
+  //     // position: 'fixed',
+  //     // bottom: '2%',
+  //     // right: '2%',
+  //   }}
+  //   backgroundColor={muiTheme.palette.primary1Color}
+  //   onTouchTap={() => this.handleTouchTap()}
+  // >
+  //   <ContentAdd />
+  // </FloatingActionButton>
   render() {
     return (
       <div className={'push-autocomplete-search'}>
@@ -44,6 +61,7 @@ class ProductSearch extends Component {
           dataSource={this.state.dataSource}
           onUpdateInput={input => this.handleUpdateInput(input)}
         />
+        <ContentAdd />
       </div>
     );
   }
