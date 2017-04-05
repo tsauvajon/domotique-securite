@@ -24,6 +24,7 @@ const PushButton = props => (
         title={props.name}
         actAsExpander
         showExpandableButton
+        onTouchTap={() => {}}
       />
       <CardText expandable>
         <List>

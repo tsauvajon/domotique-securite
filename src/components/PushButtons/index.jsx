@@ -70,6 +70,7 @@ class PushButtons extends Component {
             bottom: '2%',
             right: '2%',
           }}
+          zDepth={4}
           onTouchTap={() => this.handleFABTouchTap()}
           backgroundColor={muiTheme.palette.accent1Color}
         >
