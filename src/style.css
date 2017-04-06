@@ -2,6 +2,7 @@ body {
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F5F5F5;
 }
 
 ol, ul {
@@ -16,6 +17,13 @@ ol, ul {
 
 .status {
   margin-bottom: 10px;
+}
+
+.push-paper {
+  padding: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 450px;
 }
 
 .dark-primary-color    { background: #00796B; }

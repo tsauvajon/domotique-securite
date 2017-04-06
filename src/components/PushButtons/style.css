@@ -1,8 +1,3 @@
-/*.push-btn-list {
-  max-height: 1000px;
-  transition: max-height 4s ease-in;
-}*/
-
 .push-btn-list {
     max-height: 5%;
     transition: max-height 0.5s ease-out;
@@ -12,4 +7,14 @@
 .push-btn-list:hover {
   max-height: 100%;
   transition: max-height 0.5s ease-in;
+}
+
+.btns-appear {
+  opacity: 0.01;
+}
+
+.btns-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+  animation: come-from-bottom .5s;
 }

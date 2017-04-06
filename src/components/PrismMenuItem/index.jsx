@@ -11,7 +11,7 @@ class PrismMenuItem extends Component {
   render() {
     return (
       <div className="prism-menu-item">
-        <Link to={this.props.to}>
+        <Link to={`/domotique-securite${this.props.to}`}>
           <MenuItem onTouchTap={() => this.handleTouchTap()} >
             {this.props.icon}
             &nbsp;
