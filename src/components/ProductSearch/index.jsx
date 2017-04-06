@@ -39,20 +39,6 @@ class ProductSearch extends Component {
     }
   }
 
-  // <FloatingActionButton
-  //   mini
-  //
-  //   style={{
-  //     margin: 10,
-  //     // position: 'fixed',
-  //     // bottom: '2%',
-  //     // right: '2%',
-  //   }}
-  //   backgroundColor={muiTheme.palette.primary1Color}
-  //   onTouchTap={() => this.handleTouchTap()}
-  // >
-  //   <ContentAdd />
-  // </FloatingActionButton>
   render() {
     return (
       <div className={'push-autocomplete-search'}>

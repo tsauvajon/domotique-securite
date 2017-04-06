@@ -1,8 +1,8 @@
-import uuid from 'uuid/v4';
-
 const pushButtons = [
   {
-    id: uuid(),
+    id: Math.floor(Math.random() * 8999) + 1000,
+    idUser: 1,
+    macAddress: '',
     name: 'Lessive',
     products: [
       {
@@ -20,7 +20,7 @@ const pushButtons = [
     ],
   },
   {
-    id: uuid(),
+    id: Math.floor(Math.random() * 8999) + 1000,
     name: 'Cuisine',
     products: [
       {
@@ -32,7 +32,7 @@ const pushButtons = [
     ],
   },
   {
-    id: uuid(),
+    id: Math.floor(Math.random() * 8999) + 1000,
     name: 'Toilettes',
     products: [
       {

@@ -19,12 +19,14 @@ class Admin extends Component {
     return (
       <div>
         <br /><br />
-        <Switch>
-          <Route exact path="/domotique-securite/admin/settings" component={Settings} />
-          <Route exact path="/domotique-securite/admin/planning" component={Planning} />
-          <Route exact path="/domotique-securite/admin/orders" component={Orders} />
-          <Route component={NotFound} />
-        </Switch>
+        <div style={{ paddingBottom: '80px', overflow: 'hidden' }}>
+          <Switch>
+            <Route exact path="/domotique-securite/admin/settings" component={Settings} />
+            <Route exact path="/domotique-securite/admin/planning" component={Planning} />
+            <Route exact path="/domotique-securite/admin/orders" component={Orders} />
+            <Route component={NotFound} />
+          </Switch>
+        </div>
         <BottomNav />
       </div>
     );

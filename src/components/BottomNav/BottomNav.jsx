@@ -38,7 +38,7 @@ class BottomNav extends Component {
         zDepth={2}
         className="prism-bottom-nav"
         style={{
-          bottom: '1px',
+          bottom: '0px',
           position: 'fixed',
           width: '100%',
           zIndex: 500,

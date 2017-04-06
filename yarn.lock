@@ -4750,6 +4750,14 @@ react-bootstrap@^0.30.8:
     uncontrollable "^4.0.1"
     warning "^3.0.0"
 
+react-delayed-list@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/react-delayed-list/-/react-delayed-list-1.0.8.tgz#c91bc99e6b167f5f3748bec2de08f0f25b24fd55"
+  dependencies:
+    react "^15.4.2"
+    react-addons-css-transition-group "^15.4.2"
+    react-dom "^15.4.2"
+
 react-dev-utils@^0.5.0:
   version "0.5.2"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-0.5.2.tgz#50d0b962d3a94b6c2e8f2011ed6468e4124bc410"

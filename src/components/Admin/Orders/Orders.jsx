@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import DelayedList from 'react-delayed-list';
 import ActionAlarm from 'material-ui/svg-icons/action/alarm';
 import MapsLocalShipping from 'material-ui/svg-icons/maps/local-shipping';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
@@ -56,6 +57,17 @@ class Orders extends Component {
             </tbody>
           </table>
         </ZoomInPaper>
+        <DelayedList delay={300} transitionClass="mylist">
+          <h1>DelayedList</h1>
+          <h2>Is</h2>
+          <h3>Awesome</h3>
+          <h2>Is</h2>
+          <h3>Awesome</h3>
+          <h2>Is</h2>
+          <h3>Awesome</h3>
+          <h2>Is</h2>
+          <h3>Awesome</h3>
+        </DelayedList>
         <ReactCSSTransitionGroup
           transitionName={{
             enter: 'bounceInUp',

@@ -294,6 +294,58 @@
   animation-fill-mode: both;
 }
 
+.bounceInUp-enter {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.bounceInUp-enter.bounceInUp-enter-active {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.bounceInUp-appear {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.bounceInUp-appear.bounceInUp-appear-active {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+  -webkit-animation-duration: 0.9s;
+  animation-duration: 0.9s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.mylist-enter {
+    opacity: 0;
+    transform:   translate(-250px,0);
+    transform: translate3d(-250px,0,0);
+}
+
+.mylist-enter.mylist-enter-active {
+  	opacity: 1;
+  	transition: opacity 1s ease;
+  	transform: translate(0,0);
+  	transform: translate3d(0,0,0);
+  	transition-property: transform, opacity;
+  	transition-duration: 500ms;
+  	transition-timing-function: cubic-bezier(0.175, 0.665, 0.320, 1), linear;
+}
+
 /* Zoom In */
 
 @-webkit-keyframes zoomIn {

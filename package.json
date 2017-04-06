@@ -31,6 +31,7 @@
     "react": "^15.4.2",
     "react-addons-css-transition-group": "^15.4.2",
     "react-bootstrap": "^0.30.8",
+    "react-delayed-list": "^1.0.8",
     "react-dom": "^15.4.2",
     "react-facebook-login": "^3.5.0",
     "react-google-login": "^2.8.5",
