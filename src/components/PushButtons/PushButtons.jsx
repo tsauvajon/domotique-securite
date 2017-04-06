@@ -1,19 +1,14 @@
 import React, { Component, PropTypes } from 'react';
-// import jsonp from 'jsonp-promise';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import PushButton from '../PushButton';
 import Header from '../Header';
-// import mockPushButtons from '../../mockups/pushButtons';
 import muiTheme from '../../style/muiTheme';
 
 const userId = 1;
 const url = `//domo-push.herokuapp.com/api//users/${userId}/boutons`;
-
-// async function getButtons() {
-// }
 
 class PushButtons extends Component {
   constructor(props) {
