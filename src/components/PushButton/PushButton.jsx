@@ -16,7 +16,7 @@ class PushButton extends Component {
     super(props);
     this.state = {
       products: [],
-      url: `http://localhost:4000/api/boutons/${props.id}/products`,
+      url: `//domo-push.herokuapp.com/api/boutons/${props.id}/products`,
     };
   }
 

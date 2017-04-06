@@ -10,7 +10,7 @@ import Header from '../Header';
 import muiTheme from '../../style/muiTheme';
 
 const userId = 1;
-const url = `//localhost:4000/api/users/${userId}/boutons`;
+const url = `//domo-push.herokuapp.com/api//users/${userId}/boutons`;
 
 // async function getButtons() {
 // }
