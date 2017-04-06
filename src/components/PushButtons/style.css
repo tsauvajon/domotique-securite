@@ -1,0 +1,15 @@
+/*.push-btn-list {
+  max-height: 1000px;
+  transition: max-height 4s ease-in;
+}*/
+
+.push-btn-list {
+    max-height: 5%;
+    transition: max-height 0.5s ease-out;
+    overflow: hidden;
+}
+
+.push-btn-list:hover {
+  max-height: 100%;
+  transition: max-height 0.5s ease-in;
+}

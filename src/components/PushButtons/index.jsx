@@ -5,6 +5,7 @@ import uuid from 'uuid/v4';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import PushButton from '../PushButton';
 import Header from '../Header';
+import './style.css';
 
 class PushButtons extends Component {
   constructor(props) {
@@ -77,7 +78,7 @@ class PushButtons extends Component {
     return (
       <div>
         <Header title={'Boutons Push'} />
-        <center>
+        <center className={'push-btn-list'}>
           {
             this.state.pushButtons.map(
             btn => (
