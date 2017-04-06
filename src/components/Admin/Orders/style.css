@@ -1,0 +1,13 @@
+.push-order-delivered {
+  background-color: #8bc34a;
+}
+
+.push-order-pending {
+  background-color: #ffeb3b;
+}
+
+td {
+  width: 33%;
+  text-align: center;
+  /*margin-right: 5px;*/
+}

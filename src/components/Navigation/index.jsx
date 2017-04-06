@@ -48,7 +48,7 @@ class Navigation extends Component {
           title="Push"
           onLeftIconButtonTouchTap={() => this.handleTouchTap()}
           iconElementRight={
-            <Link to="/">
+            <Link to="/domotique-securite/">
               <Logo />
             </Link>
           }

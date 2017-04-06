@@ -34,23 +34,32 @@ class BottomNav extends Component {
 
   render() {
     return (
-      <Paper zDepth={2} className="prism-bottom-nav" style={{ bottom: '1px', position: 'absolute', width: '100%' }}>
+      <Paper
+        zDepth={2}
+        className="prism-bottom-nav"
+        style={{
+          bottom: '1px',
+          position: 'fixed',
+          width: '100%',
+          zIndex: 500,
+        }}
+      >
         <BottomNavigation selectedIndex={this.state.selectedIndex}>
-          <Link to="/admin/settings" onTouchTap={() => this.select(0)}>
+          <Link to="/domotique-securite/admin/settings" onTouchTap={() => this.select(0)}>
             <BottomNavigationItem
               label="Livraison mini"
               icon={paramIcon}
               selected={this.state.selectedIndex === 0}
             />
           </Link>
-          <Link to="/admin/planning" onTouchTap={() => this.select(1)}>
+          <Link to="/domotique-securite/admin/planning" onTouchTap={() => this.select(1)}>
             <BottomNavigationItem
               label="Horaires"
               icon={planningIcon}
               selected={this.state.selectedIndex === 1}
             />
           </Link>
-          <Link to="/admin/orders" onTouchTap={() => this.select(2)}>
+          <Link to="/domotique-securite/admin/orders" onTouchTap={() => this.select(2)}>
             <BottomNavigationItem
               label="Commandes"
               icon={ordersIcon}

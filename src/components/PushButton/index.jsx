@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Card, CardHeader, CardText } from 'material-ui/Card';
-// import FontIcon from 'material-ui/FontIcon';
+import FontIcon from 'material-ui/FontIcon';
 import Avatar from 'material-ui/Avatar';
 import { List, ListItem } from 'material-ui/List';
 import Subheader from 'material-ui/Subheader';
@@ -8,6 +8,7 @@ import Divider from 'material-ui/Divider';
 import ProductSearch from '../ProductSearch';
 import './style.css';
 
+const pushIcon = <FontIcon className="material-icons md-48">touch_app</FontIcon>;
 // const addIcon = <FontIcon className="material-icons md-48">settings_remote</FontIcon>;
 // const editIcon = <FontIcon className="material-icons md-48">create</FontIcon>;
 
@@ -21,6 +22,7 @@ const PushButton = props => (
   <div className={'push-push-btn'}>
     <Card>
       <CardHeader
+        avatar={pushIcon}
         title={props.name}
         actAsExpander
         showExpandableButton

@@ -37,45 +37,57 @@ class PushButtons extends Component {
     return (
       <div>
         <Header title={'Boutons Push'} />
-        <center>
-          <ReactCSSTransitionGroup
-            transitionName={{
-              enter: 'bounceInUp',
-              enterActive: 'bounceInUp',
-              appear: 'bounceInUp',
-              appearActive: 'bounceInUp',
-            }}
-            transitionAppear
-            transitionAppearTimeout={0}
-            transitionEnterTimeout={0}
-            transitionLeave={false}
-          >
-            {
-              this.state.pushButtons.map(
-              ({ name, id, products }) => (
-                <PushButton
-                  key={`push-btn-${name}-${id}`}
-                  name={name}
-                  products={products}
-                  onTouchTap={() => {}}
-                />),
-              )
-            }
-          </ReactCSSTransitionGroup>
-        </center>
-        <FloatingActionButton
-          style={{
-            marginRight: 20,
-            position: 'fixed',
-            bottom: '2%',
-            right: '2%',
+        <ReactCSSTransitionGroup
+          transitionName={{
+            enter: 'bounceInUp',
+            enterActive: 'bounceInUp',
+            appear: 'bounceInUp',
+            appearActive: 'bounceInUp',
           }}
-          zDepth={4}
-          onTouchTap={() => this.handleFABTouchTap()}
-          backgroundColor={muiTheme.palette.accent1Color}
+          transitionAppear
+          transitionAppearTimeout={0}
+          transitionEnterTimeout={0}
+          transitionLeave={false}
         >
-          <ContentAdd />
-        </FloatingActionButton>
+          {
+            this.state.pushButtons.map(
+            ({ name, id, products }) => (
+              <PushButton
+                key={`push-btn-${name}-${id}`}
+                name={name}
+                products={products}
+                onTouchTap={() => {}}
+              />),
+            )
+          }
+        </ReactCSSTransitionGroup>
+        <ReactCSSTransitionGroup
+          transitionName={{
+            enter: 'zoomInDelayed',
+            enterActive: 'zoomInDelayed',
+            appear: 'zoomInDelayed',
+            appearActive: 'zoomInDelayed',
+          }}
+          transitionAppear
+          transitionAppearTimeout={1300}
+          transitionEnterTimeout={1300}
+          transitionLeave={false}
+        >
+          <FloatingActionButton
+            style={{
+              marginRight: 20,
+              position: 'fixed',
+              bottom: '2%',
+              right: '2%',
+              zIndex: 500,
+            }}
+            zDepth={4}
+            onTouchTap={() => this.handleFABTouchTap()}
+            backgroundColor={muiTheme.palette.accent1Color}
+          >
+            <ContentAdd />
+          </FloatingActionButton>
+        </ReactCSSTransitionGroup>
       </div>
     );
   }

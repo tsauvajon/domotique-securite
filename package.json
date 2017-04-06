@@ -1,7 +1,7 @@
 {
   "name": "domotique-securite",
   "version": "1.0.0",
-  "homepage": "./",
+  "homepage": "https://tsauvajon.github.io/domotique-securite/",
   "private": false,
   "devDependencies": {
     "babel": "^6.23.0",
@@ -16,6 +16,7 @@
     "amazon-product-api": "^0.4.3",
     "classnames": "^2.2.5",
     "co": "^4.6.0",
+    "dateformat": "^2.0.0",
     "deep-freeze": "^0.0.1",
     "eslint": "^3.15.0",
     "eslint-config-airbnb": "^14.1.0",
@@ -23,6 +24,7 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.9.0",
     "express": "^4.15.2",
+    "gh-pages": "^0.12.0",
     "jsonp-promise": "^0.1.2",
     "material-ui": "^0.17.1",
     "morgan": "^1.8.1",
@@ -50,7 +52,8 @@
     "test": "react-scripts test --env=jsdom",
     "test:full": "yarn lint && yarn coverage",
     "test:once": "cross-env CI=true react-scripts test --env=jsdom",
-    "test:coverage": "cross-env CI=true react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*.js? --collectCoverageFrom=!src/index.js"
+    "test:coverage": "cross-env CI=true react-scripts test --env=jsdom --coverage --collectCoverageFrom=src/**/*.js? --collectCoverageFrom=!src/index.js",
+    "deploy": "gh-pages -d build"
   },
   "pre-commit": {
     "run": [
