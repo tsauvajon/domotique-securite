@@ -14,13 +14,24 @@ class Push extends Component {
     return { muiTheme: getMuiTheme() };
   }
 
+  handleConnectFb(payload) {
+    console.log(payload);
+  }
+
+  handleConnectGoogle(payload) {
+    console.log(payload);
+  }
+
   render() {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <Router history={browserHistory}>
           <div className="prism">
             <Navigation />
-            <Content />
+            <Content
+              onConnectFb={payload => this.handleConnectFb(payload)}
+              onConnectGoogle={payload => this.handleConnectGoogle(payload)}
+            />
           </div>
         </Router>
       </MuiThemeProvider>

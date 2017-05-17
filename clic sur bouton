@@ -1,9 +1,0 @@
-=> l'utilisateur clique sur le Bouton
-
-si une commande est en attente :
-=> on ajoute les produits du bouton à la commande en attente
-sinon :
-=> on créée une commande en attente avec les produits du Bouton
-
-si la commande dépasse (ou égal) les 2 seuils
-=> passe la commande de "attente" à "expédiée"
